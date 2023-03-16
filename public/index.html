@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bulma/bulma.min.css">
+</head>
+
+<body class="columns">
+    <section class="body__systemcontext column is-two-fifths p-6 flow">
+        <label class="label" for="channel">Channel</label>
+        <div class="select">
+            <select name="channel" id="channel-select">
+                <option>Select dropdown</option>
+                <option>With options</option>
+            </select>
+        </div>
+        <label class="label" for="context">System Context</label>
+        <div class="control">
+            <textarea class="textarea" name="context" id="system-context"></textarea>
+        </div>
+        <button class="button is-primary" id="system-context-save-btn">Save</button>
+    </section>
+    <main class="body__main column"></main>
+    <section class="body__settings column is-one-quarter"></section>
+
+
+    <script src="api.js" defer></script>
+    <script src="index.js" defer></script>
+</body>
+
+</html>

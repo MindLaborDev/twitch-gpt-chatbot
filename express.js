@@ -27,19 +27,17 @@ export default class ExpressServer {
             }
 
             console.log(chalk.yellow("Config updated!!"));
-
             res.send("Config saved successfully");
         });
 
         this.app.get("/get-config", (req, res) => {
-            console.log("Sending config:", this.config);
             res.send(this.config);
         });
     }
 
     start() {
         this.app.listen(this.port, () => {
-            console.log(chalk.underline.yellow(`Server listening on port ${this.port}`));
+            console.log(chalk.underline.yellow(`Server listening!`, `http://localhost:${this.port}`));
         });
     }
 }
